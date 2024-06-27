@@ -1,0 +1,144 @@
+@font-face {
+    font-family: Margin;
+    src: url(fonts/Margin.otf);
+}
+
+@keyframes indicatorSlide {
+    from {  width: 10px;
+            height: 10px;
+            border-radius: 50%;}
+    to {    width: 30px;
+            height: 7px;
+            border-radius: 4px;}
+}
+
+.headerContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 9vw;
+    padding-right: 9vw;
+    border-bottom: 2px solid #ccc;
+    
+}
+.logo{
+    display: flex;
+    position: relative;
+    width: 120px;
+    height: 120px;
+    max-width: 100%;
+}
+
+a {
+    display: flex;
+    align-items: center;
+}
+
+.hm a img {
+    position: relative;
+    display: flex;    
+    width: 35px;
+    height: 35px;
+    right: 10px;
+}
+.log a img{
+    position: relative;
+    display: flex;
+    width: 34px;
+    height: 35px;
+    left: 800px;
+}
+:root {
+    --primary-color: #089e9e8e;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+
+
+h1{
+    color: var(--primary-color);
+}
+
+p {
+    text-align: center;
+}
+
+.btn{
+    color: white;
+    background: var(--primary-color);
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 5px 12px;
+}
+
+.conversor-imagen{
+    width: 200px;
+}
+
+.moneda{
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.moneda select{
+    padding: 10px 20px 10px 10px;
+    border: 1px solid #000000;
+    font-size: 16px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.moneda input {
+    border: 10px color rgb(255, 255, 255);
+    font-size: 30px;
+    text-align: right;
+}
+
+.taza-cambio-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cambio{
+    color: var(--primary-color);
+    font-size: 14px;
+    padding: 0 10px;
+    font-weight: 600;
+}
+
+select:focus, input:focus, button:focus{
+    outline: 0;
+}
+
+@media (max-width:600px) {
+    .moneda input{
+        width: 200px;
+    }
+    
+}
+.container-todo{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.worldicon{
+    position: relative;
+    display: flex;
+    left: 240px;
+    margin-left: 10px;
+    padding: 1.5rem;
+    cursor: pointer;
+    width: 150px;
+    height: 150px;
+}
