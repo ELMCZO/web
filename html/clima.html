@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador del clima</title>
+    <link rel="stylesheet" href="/css/climaStyle.css">
+    <script src="/js/clima.js" defer></script>
+</head>
+<body>
+    <div class="headerContainer">
+        <div class="logo">
+            <img src="/img/Designer (1).jpeg" alt="" class="logmx">
+        </div>
+        <div class="log">
+            <a id="profileLink" href="login.html"><img class="profileIcon" src="/img/profileIcon.svg" alt=""></a>
+        </div>
+        <div class="camb">
+            <a href="cambio.html"><img src="/img/moneda.png" class="moneda" alt=""></a>
+        </div>
+        <div class="hm">
+            <a href="index.html"><img class="homeIcon" src="/img/casa.png" alt=""></a>
+        </div>
+    </div>
+    <section class="weather-content">
+        <h1>Buscador del clima</h1>
+        <div class="result">
+            <p>Agrege cuidad y pais</p>
+           
+        </div>
+        <form action="" method="POST" class="get-weather">
+            <input type="text" name="city" id="city" placeholder="Write your city...">
+            <select name="" id="country">
+                <option disabled selected value="">Select the country</option>
+                <option value="AR">Argentina</option>
+                <option value="CO">Colombia</option>
+                <option value="CR">Costa Rica</option>
+                <option value="ES">España</option>
+                <option value="US">Estados Unidos</option>
+                <option value="MX">México</option>
+                <option value="PE">Perú</option>
+                <option value="CL">Chile</option>
+            </select>
+            <input type="submit" name="" id="" value="Get Weather">
+        </form>
+    </section>
+    
+</body>
+</html>
